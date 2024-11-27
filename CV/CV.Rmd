@@ -1,0 +1,207 @@
+---
+name: Danyang Dai 
+position: "PhD Student - Faculty of Medicine"
+phone: 0416874688
+email: "danyang.dai@uq.edu.au"
+github: danyangdai
+linkedin: danyang-dai-7529b4152
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+always_allow_html: yes
+header-includes: 
+- \usepackage{hyperref}
+- \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan}
+- \usepackage{multicol}
+- \usepackage{colortbl}
+- \arrayrulecolor{white}
+- \usepackage{hhline}
+- \usepackage{fontawesome}
+- \usepackage{setspace}
+- \usepackage[none]{hyphenat}
+- \usepackage{setspace}
+- \usepackage{float}
+headcolor: 009ACD
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = FALSE, message = FALSE)
+library(vitae)
+library(dbplyr)
+library(tidyverse)
+library(icons)
+library(spelling)
+library(fontawesome)
+#library(gt)
+```
+
+\renewcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{text}#1}}
+
+# Education
+
+```{r}
+tibble(
+  when = "2023 - 2026",
+  what = "Brisbane, QLD",
+  where = "University of Queensland",
+  with = "Doctor of Philosophy", "Herston, QLD",
+  why = list(c("Supervisors: Professor Jason Pole, Associated Professor Sally Shrapnel, Doctor Pedro Franca Gois", "Digital Health Methods for Evaluating Chronic Organ Injuries Resulting from Infectious Epidemics: Acute Kidney Injury post COVID-19 Omicron Surge as an Exemplar"))) %>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+
+```{r}
+tibble(
+  when = "2019-2020 Dec",
+  what = "Parkville, VIC",
+  where = "University of Melbourne",
+  with = "Master of Applied Econometrics", "Parkville, VIC",
+  why = list(c("First Class Honours Thesis (83): Official and online inflation spillover analysis of the euro area.","Supervision: Professor Kalvinder Shields and Dr.
+Andrew Clarke."))) %>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+```{r}
+tibble(
+  when = "2015-2018",
+  what = "Clayton, VIC",
+  where = "Monash University",
+  with = "Bachelor of Commerce") %>%
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+# Awards
+
+- Digital Health UQ-QH Alliance (DHUQHA) Scholarship 
+
+# Research Experience
+
+```{r}
+tibble(
+  when = "2023 Jul - Present",
+  what = "Faculty of Medicine",
+  where = "University of Queensland",
+  with = "Research Assistant to Professor Tracy Comans",
+   why = list(c("Australian National Aged Care Classification Risk Adjustment.","Assigning risk adjustment to each age care facility according to different measurement."))) %>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+```{r}
+tibble(
+  when = "2022 Aug - 2022 Dec",
+  what = "School of Mathematics and Physics",
+  where = "University of Queensland",
+  with = "Research Assistant to Associate Professor Sally Shrapnel",
+   why = list(c("Project with the International Severe Acute Respiratory and emerging Infections
+Consortium (ISARIC).","This study investigates how different COVID-19 variants such as Alpha, Beta, Delta and Omricon cause Acute Kidney Injury (AKI) in patients admited to the hospital.","Conduct analyses using COVID-19 patient data across 67 countries provided by University
+of Oxford’s Centre for Tropical Medicine and Global Health.","Develop an algorithm that identifies AKI from Kidney Disease Improving Global Outcomes (KDIGO) measurements.","Build and maintain a local database that contains all medical records for patients.", "Produce data visualisation and data analysis for the research paper."))) %>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+```{r}
+tibble(
+  when = "2021 Oct - 2022 Sep",
+  what = "School of Public Health and Preventive Medicine",
+  where = "Monash University",
+  with = "Research Assistant to Associate Professor Ben Beck",
+  why = list(c("Conduct research activities for Sustainable Mobility: city-wide exposure modelling to advance bicycling” (DP210102089) study under the supervision of Assoc Prof. Ben Beck.","This project aims to develop a platform that models the number of cyclists on each road in greater Melbourne.", "Managing and monitoring the entire 6-month data collection period using data visualisations.","Design and implement algorithms that calculate trip information including trip distance, duration, speed and acceleration.","Assist in preparing scientific reports and other documentation, including undertaking literature reviews and data analysis.","Recruit over 900 participants for the study and distribution of GPS monitoring equipment. Overseeing participant management and providing support when required."))) %>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+```{r}
+tibble(
+  when = "2021 Oct - 2022 March",
+  what = "Econometrics and Business Statistics",
+  where = "Monash University",
+  with = "Research Assistant to Econometrics and Business Statistics Department",
+  why = list(c("Helped develop self-guided intertactive online learning materials for students learning R.", "This short course provides the necessary skills to use R when learning more advanced and specialised topics at Monash.","The topics covered include: RStudio IDE, basic R programming, troubleshooting, project management, data analysis, modelling, visualisation and communication with data.","This resouse is used by hundreds of students from Monash University and it is publicly available online at \\url{https://learnr.numbat.space}."))
+)%>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where, .protect = FALSE)
+
+```
+
+```{r}
+tibble(
+  when = "2021 Jun - 2021 Oct",
+  what = "Econometrics and Business Statistics",
+  where = "Monash University",
+  with = "Research Assistant to Dr. Emi Tanaka",
+  why = list(c("This research project looks into how the development of open source software can be quantified as academic achievements.","Developing an R package (cranscrub) which provide processed data of the number of unique user R package downloads.","Developed advanced data management skills by processing a large dataset (65GB) on a server using R."))
+)%>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+
+```
+
+
+# Teaching Experience
+
+```{r}
+tibble(
+  when = "2021 Jan - 2022 Dec",
+  what = "Econometrics and Business Statistics",
+  where = "Monash University",
+  with = "Teaching Assistant",
+  why = list(c("Data visualisation and analytics (ETF5922), Statistical Thinking (ETC2420), Introductory econometrics (ETC2410) and Introduction to data analysis (ETC5510)."))
+)%>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+
+```
+
+# Published and working papers
+
+```{r}
+tibble(
+  when = "2023",
+  what = "Marina Wainstein, Nicholas Spyrison, Danyang Dai, Moji Ghadimi, Jonathan S. Chávez-Iñiguez, Lilia Rizo-Topete, Barbara Wanjiru Citarella, Laura Merson, Jason D. Pole, Rolando Claure-Del Granado, David W. Johnson, Sally Shrapnel",
+  where = "Kidney International Reports",
+  with = "Association of Country Income Level With the Characteristics and Outcomes of Critically Ill Patients Hospitalized With Acute Kidney Injury and COVID-19") %>%
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+```{r}
+tibble(
+  when = "2023",
+  what = "Danyang Dai, Mitchell O'Hara-Wild, Emi Tanaka",
+  where = "Australian Statistical Conference and Australian Conference on Teaching Statistics 2023",
+  with = "Teach a student how to debug, and they can code for a lifetime: Open-source interactive self-paced R learning website - Conference presentation") %>%
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+
+```{r}
+tibble(
+  when = "Working paper",
+  what = "Debjit Bhowmick, Danyang Dai,  Ben Beck.",
+  where = "Intended Journal: Travel Behavior and Society",
+  with = "GPS data collection for modelling bicycling activity]{GPS data collection for modelling bicycling activity across Greater Melbourne") %>%
+  detailed_entries(what = what, when = when, with = with, where = where)
+```
+
+
+# Affiliation 
+
+```{r}
+tibble(
+  when = "2023 May - Present",
+  with = "Committee Member",
+  where = "Brisbane",
+  what = "Queensland Digital Health Center HDR Symposium Working Group",
+  why = list(c("Assisting in bring all HDR students in the digital health space together.", "Organising Queensland Digital Health HDR Symposium happening in October 2023")))%>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+```{r}
+tibble(
+  when = "2020 March - Present",
+  with = "President",
+  where = "Melbourne",
+  what = "R-Ladies Melbourne",
+  why = list(c("Giving Public Workshop: R Markdown ‑ A Better Way of Communicating with Data.","Workshop on website development using Blogdown","Host public events including TidyTuesdsay","In charge of the Github account and maintaining repositories."))
+)%>%
+  detailed_entries(what = what, when = when, with = with, why = why, where = where)
+```
+
+
